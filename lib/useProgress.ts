@@ -27,7 +27,7 @@ export function useProgress(totalItems: number) {
         next.add(id);
       }
       try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify([...next]));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(next)));
       } catch {}
       return next;
     });
