@@ -2,6 +2,7 @@
   "name": "tech-job-guide",
   "version": "0.1.0",
   "private": true,
+  "engines": { "node": ">=18" },
   "scripts": {
     "dev": "pnpm exec next dev",
     "local": "pnpm exec next dev",
